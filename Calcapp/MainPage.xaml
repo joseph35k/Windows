@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="MainApp">
+
+    <Grid HorizontalAlignment="Left" Margin="0,48.333,0,-0.333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="117*"/>
+        </Grid.RowDefinitions>
+        <TextBox Margin="0,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="390"  Height="44" Grid.Row="1" Foreground="#FF0A0909" HorizontalAlignment="Right" x:Name="result"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,92.577,0,0" VerticalAlignment="Top" Height="30" Width="40" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="8" HorizontalAlignment="Stretch" Margin="124,92.577,167,0" VerticalAlignment="Top" Width="40" Height="30" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="238,92.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="10,49.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="operator_click"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="124,48.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="operator_click"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="238,48.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="operator_click"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,136.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="124,136.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="238,136.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,180.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="124,180.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="238,180.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="10,224.577,0,0" VerticalAlignment="Top" Width="223" Grid.Row="1" Click="operator_click"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="238,224.577,0,0" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="238,268.577,0,0" VerticalAlignment="Top" Width="109" Height="57" Grid.Row="1" Click="Button_Click_1"/>
+        <Button Content="CE" HorizontalAlignment="Left" Margin="10,268.577,0,0" VerticalAlignment="Top" Width="223" Grid.Row="1" Click="Button_Click_2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="44" Width="50" Grid.Row="1" FontSize="12" FontWeight="Bold" Foreground="#FF0E0C0C" x:Name="set_operation"/>
+
+    </Grid>
+</Page>
